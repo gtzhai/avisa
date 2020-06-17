@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project(app)
+add_definitions(-std=c++14)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+add_subdirectory(3rd)
+add_subdirectory(src)
+add_subdirectory(client)
